@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="zoologico_electrico" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoológico Eléctrico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaD-AR-LYx">
+                                <rect key="frame" x="20" y="44" width="231" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido al Zoo más pequeño de todos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-wz-96T">
+                                <rect key="frame" x="20" y="108" width="339" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlH-eH-vyb">
+                                <rect key="frame" x="20" y="261" width="123" height="30"/>
+                                <state key="normal" title="Animales grandes"/>
+                                <connections>
+                                    <segue destination="0No-qH-orC" kind="show" id="eD2-zi-Jc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-HZ-qz4">
+                                <rect key="frame" x="20" y="311" width="134" height="30"/>
+                                <state key="normal" title="Animales pequeños"/>
+                                <connections>
+                                    <segue destination="xkr-RQ-Gbw" kind="show" id="dj2-P1-nbT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AaD-AR-LYx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BP4-44-u9D"/>
+                            <constraint firstItem="Rij-HZ-qz4" firstAttribute="top" secondItem="VlH-eH-vyb" secondAttribute="bottom" constant="20" id="EMI-2o-DAa"/>
+                            <constraint firstItem="FhQ-wz-96T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GDZ-u9-dt6"/>
+                            <constraint firstItem="AaD-AR-LYx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IMS-kd-dir"/>
+                            <constraint firstItem="VlH-eH-vyb" firstAttribute="top" secondItem="FhQ-wz-96T" secondAttribute="bottom" constant="131" id="N5K-HC-HF2"/>
+                            <constraint firstItem="Rij-HZ-qz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SGz-7K-0YA"/>
+                            <constraint firstItem="VlH-eH-vyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c7b-jm-Ue4"/>
+                            <constraint firstItem="FhQ-wz-96T" firstAttribute="top" secondItem="AaD-AR-LYx" secondAttribute="bottom" constant="30" id="vLp-5F-Qc0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="34.821428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zou-DX-DrT">
+            <objects>
+                <viewController id="xkr-RQ-Gbw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zk-H2-bYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animales Pequeños" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPe-2j-4jk">
+                                <rect key="frame" x="20" y="20" width="171" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pajaro" translatesAutoresizingMaskIntoConstraints="NO" id="Y2G-C6-anq">
+                                <rect key="frame" x="20" y="84" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="LCn-yQ-PAE"/>
+                                    <constraint firstAttribute="height" constant="128" id="qVg-NQ-enx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camaleon" translatesAutoresizingMaskIntoConstraints="NO" id="tqf-5Y-Qhm">
+                                <rect key="frame" x="20" y="232" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZSk-rU-5u9"/>
+                                    <constraint firstAttribute="width" constant="171" id="aLp-gh-vTj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abeja" translatesAutoresizingMaskIntoConstraints="NO" id="yl7-7r-WLv">
+                                <rect key="frame" x="20" y="380" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="Bos-rK-IIA"/>
+                                    <constraint firstAttribute="height" constant="128" id="MNZ-MW-kSJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyberpajaro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQo-2q-3E1">
+                                <rect key="frame" x="201" y="78" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-E2-2g0">
+                                <rect key="frame" x="201" y="109" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cybercamaleon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbL-0C-0m2">
+                                <rect key="frame" x="201" y="228" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M5b-sV-mpD">
+                                <rect key="frame" x="201" y="259" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sgR-cv-Lg2">
+                                <rect key="frame" x="201" y="409" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyberabeja" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1m-zL-RaR">
+                                <rect key="frame" x="201" y="378" width="87.5" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y2G-C6-anq" firstAttribute="leading" secondItem="eNZ-Rh-Ahg" secondAttribute="leading" constant="20" id="1Kn-3N-xRL"/>
+                            <constraint firstItem="sgR-cv-Lg2" firstAttribute="leading" secondItem="yl7-7r-WLv" secondAttribute="trailing" constant="10" id="1yb-PG-9Sj"/>
+                            <constraint firstItem="LPe-2j-4jk" firstAttribute="leading" secondItem="eNZ-Rh-Ahg" secondAttribute="leading" constant="20" id="6Ay-5A-cJt"/>
+                            <constraint firstItem="M5b-sV-mpD" firstAttribute="leading" secondItem="tqf-5Y-Qhm" secondAttribute="trailing" constant="10" id="DCP-Ty-Uua"/>
+                            <constraint firstItem="zQo-2q-3E1" firstAttribute="leading" secondItem="Y2G-C6-anq" secondAttribute="trailing" constant="10" id="E4e-Uy-uII"/>
+                            <constraint firstItem="tqf-5Y-Qhm" firstAttribute="top" secondItem="Y2G-C6-anq" secondAttribute="bottom" constant="20" id="EHj-Dg-Oa8"/>
+                            <constraint firstItem="LPe-2j-4jk" firstAttribute="top" secondItem="eNZ-Rh-Ahg" secondAttribute="top" constant="20" id="HFr-jb-iUi"/>
+                            <constraint firstItem="Nip-E2-2g0" firstAttribute="leading" secondItem="Y2G-C6-anq" secondAttribute="trailing" constant="10" id="TFI-xs-XlB"/>
+                            <constraint firstItem="eNZ-Rh-Ahg" firstAttribute="bottom" secondItem="sgR-cv-Lg2" secondAttribute="bottom" constant="368" id="VQx-JI-ZcN"/>
+                            <constraint firstItem="yl7-7r-WLv" firstAttribute="top" secondItem="tqf-5Y-Qhm" secondAttribute="bottom" constant="20" id="W40-CP-55A"/>
+                            <constraint firstItem="yl7-7r-WLv" firstAttribute="leading" secondItem="eNZ-Rh-Ahg" secondAttribute="leading" constant="20" id="Xgc-OT-9RY"/>
+                            <constraint firstItem="Y2G-C6-anq" firstAttribute="top" secondItem="LPe-2j-4jk" secondAttribute="bottom" constant="40" id="Z5L-9Y-WRt"/>
+                            <constraint firstItem="Nip-E2-2g0" firstAttribute="top" secondItem="zQo-2q-3E1" secondAttribute="bottom" constant="10" id="ag2-oZ-N1D"/>
+                            <constraint firstItem="QbL-0C-0m2" firstAttribute="top" secondItem="Nip-E2-2g0" secondAttribute="bottom" constant="88" id="bby-gX-2IW"/>
+                            <constraint firstItem="i1m-zL-RaR" firstAttribute="leading" secondItem="yl7-7r-WLv" secondAttribute="trailing" constant="10" id="dAl-Eb-Y6K"/>
+                            <constraint firstItem="M5b-sV-mpD" firstAttribute="top" secondItem="QbL-0C-0m2" secondAttribute="bottom" constant="10" id="ep2-ph-p3A"/>
+                            <constraint firstItem="QbL-0C-0m2" firstAttribute="leading" secondItem="tqf-5Y-Qhm" secondAttribute="trailing" constant="10" id="s6Q-qi-s9a"/>
+                            <constraint firstItem="tqf-5Y-Qhm" firstAttribute="leading" secondItem="eNZ-Rh-Ahg" secondAttribute="leading" constant="20" id="s7S-I9-3qc"/>
+                            <constraint firstItem="i1m-zL-RaR" firstAttribute="top" secondItem="M5b-sV-mpD" secondAttribute="bottom" constant="88" id="vF8-86-rzq"/>
+                            <constraint firstItem="sgR-cv-Lg2" firstAttribute="top" secondItem="i1m-zL-RaR" secondAttribute="bottom" constant="10" id="wkE-PU-tiQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eNZ-Rh-Ahg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QkU-1h-yEK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZ7-0v-a1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rJG-ne-rc1">
+            <objects>
+                <viewController id="0No-qH-orC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6us-sL-2fl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animales Grandes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJV-U9-zBW">
+                                <rect key="frame" x="20" y="20" width="158.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caballo" translatesAutoresizingMaskIntoConstraints="NO" id="r8S-KY-kHJ">
+                                <rect key="frame" x="20" y="84" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="12K-T2-NgY"/>
+                                    <constraint firstAttribute="width" constant="171" id="eyS-Kk-cvJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dinoo" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-m7-64q">
+                                <rect key="frame" x="20" y="232" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="AUs-c5-oQu"/>
+                                    <constraint firstAttribute="height" constant="128" id="u8x-F0-7og"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canguro" translatesAutoresizingMaskIntoConstraints="NO" id="9Ex-Yk-yRL">
+                                <rect key="frame" x="20" y="380" width="171" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="XVg-mK-Qcw"/>
+                                    <constraint firstAttribute="height" constant="128" id="xkC-gq-C88"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cybercaballo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzS-NV-iov">
+                                <rect key="frame" x="201" y="84" width="100.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xzL-Gr-Y5U">
+                                <rect key="frame" x="201" y="115" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyberdino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9i-ec-67P">
+                                <rect key="frame" x="201" y="228" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-VL-dA9">
+                                <rect key="frame" x="201" y="259" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MQO-g2-EIz">
+                                <rect key="frame" x="201" y="409" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cybercanguro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fju-0q-uws">
+                                <rect key="frame" x="201" y="378" width="108.5" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fju-0q-uws" firstAttribute="leading" secondItem="9Ex-Yk-yRL" secondAttribute="trailing" constant="10" id="4EF-bE-QRe"/>
+                            <constraint firstItem="fju-0q-uws" firstAttribute="top" secondItem="aXM-VL-dA9" secondAttribute="bottom" constant="88" id="6Wc-Ps-BBR"/>
+                            <constraint firstItem="9Ex-Yk-yRL" firstAttribute="leading" secondItem="uJD-jT-Uh7" secondAttribute="leading" constant="20" id="8AM-jQ-05I"/>
+                            <constraint firstItem="xzL-Gr-Y5U" firstAttribute="leading" secondItem="r8S-KY-kHJ" secondAttribute="trailing" constant="10" id="CnV-xT-ZzP"/>
+                            <constraint firstItem="HbG-m7-64q" firstAttribute="leading" secondItem="uJD-jT-Uh7" secondAttribute="leading" constant="20" id="D07-1t-dFy"/>
+                            <constraint firstItem="MQO-g2-EIz" firstAttribute="leading" secondItem="9Ex-Yk-yRL" secondAttribute="trailing" constant="10" id="D1g-wc-kP6"/>
+                            <constraint firstItem="OzS-NV-iov" firstAttribute="top" secondItem="uJD-jT-Uh7" secondAttribute="top" constant="84" id="Hr6-wl-pIG"/>
+                            <constraint firstItem="yJV-U9-zBW" firstAttribute="leading" secondItem="uJD-jT-Uh7" secondAttribute="leading" constant="20" id="Iiv-hP-XIB"/>
+                            <constraint firstItem="9Ex-Yk-yRL" firstAttribute="top" secondItem="HbG-m7-64q" secondAttribute="bottom" constant="20" id="MkP-nu-7rb"/>
+                            <constraint firstItem="xzL-Gr-Y5U" firstAttribute="top" secondItem="OzS-NV-iov" secondAttribute="bottom" constant="10" id="Qdt-Gq-SWL"/>
+                            <constraint firstItem="r8S-KY-kHJ" firstAttribute="leading" secondItem="uJD-jT-Uh7" secondAttribute="leading" constant="20" id="YCG-ZP-TqH"/>
+                            <constraint firstItem="OzS-NV-iov" firstAttribute="leading" secondItem="r8S-KY-kHJ" secondAttribute="trailing" constant="10" id="ZNf-gi-Q2d"/>
+                            <constraint firstItem="MQO-g2-EIz" firstAttribute="top" secondItem="fju-0q-uws" secondAttribute="bottom" constant="10" id="b7m-Cf-dw7"/>
+                            <constraint firstItem="yJV-U9-zBW" firstAttribute="top" secondItem="uJD-jT-Uh7" secondAttribute="top" constant="20" id="cZd-9V-Wxs"/>
+                            <constraint firstItem="HbG-m7-64q" firstAttribute="top" secondItem="r8S-KY-kHJ" secondAttribute="bottom" constant="20" id="eMg-FB-22Y"/>
+                            <constraint firstItem="uJD-jT-Uh7" firstAttribute="bottom" secondItem="MQO-g2-EIz" secondAttribute="bottom" constant="368" id="eRq-Iu-qJm"/>
+                            <constraint firstItem="e9i-ec-67P" firstAttribute="leading" secondItem="HbG-m7-64q" secondAttribute="trailing" constant="10" id="grn-Kz-qBf"/>
+                            <constraint firstItem="aXM-VL-dA9" firstAttribute="leading" secondItem="HbG-m7-64q" secondAttribute="trailing" constant="10" id="n3U-3v-ap0"/>
+                            <constraint firstItem="r8S-KY-kHJ" firstAttribute="top" secondItem="yJV-U9-zBW" secondAttribute="bottom" constant="40" id="xC0-S1-Vk5"/>
+                            <constraint firstItem="aXM-VL-dA9" firstAttribute="top" secondItem="e9i-ec-67P" secondAttribute="bottom" constant="10" id="yO0-Me-N2L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uJD-jT-Uh7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rKj-nI-Whh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvv-rJ-7I7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="-369"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abeja" width="960" height="560"/>
+        <image name="caballo" width="1280" height="720"/>
+        <image name="camaleon" width="1024" height="640"/>
+        <image name="canguro" width="1024" height="768"/>
+        <image name="dinoo" width="400" height="324"/>
+        <image name="pajaro" width="1280" height="720"/>
+    </resources>
+</document>
